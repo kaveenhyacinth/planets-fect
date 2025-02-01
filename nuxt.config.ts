@@ -5,11 +5,23 @@ export default defineNuxtConfig({
 
   css: ['~/assets/scss/main.scss'],
 
+  modules: ['@nuxt/eslint', 'nuxt-icons', '@nuxtjs/google-fonts'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+
+  googleFonts: {
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    families: {
+      Antonio: [400, 500],
+      'League Spartan': [400, 500, 600, 700],
+    }
   },
 
   vite: {

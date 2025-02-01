@@ -18,10 +18,16 @@ const typeDefs = `
     geology: String!
   }
   
+  type Color {
+    menu: String!
+    accent: String!
+  }
+  
   type Planets {
     id: ID!
     slug: String!
     name: String!
+    colors: Color
   }
   
   type Planet {
@@ -36,6 +42,7 @@ const typeDefs = `
     radius: String!
     temperature: String!
     images: Image
+    colors: Color
   }
   
   type Query {

@@ -10,7 +10,16 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'antonio': ['Antonio', 'sans-serif'],
+        'spartan': ['League Spartan', 'sans-serif'],
+      },
+      colors: {
+        'bg-color': 'var(--bg-color)',
+        'line-color': 'var(--line-color)',
+      }
+    },
   },
   plugins: [],
 }

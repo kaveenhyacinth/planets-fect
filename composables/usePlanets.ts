@@ -7,6 +7,10 @@ export const usePlanets = () => {
               id
               slug
               name
+              colors {
+                  menu
+                  accent
+              }
           }
       }
   `;
@@ -37,6 +41,10 @@ export const usePlanets = () => {
                   planet
                   internal
                   geology
+              }
+              colors {
+                  menu
+                  accent
               }
           }
       }
